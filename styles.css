@@ -1,0 +1,41 @@
+:root {
+    --colorPrimary: hsl(217, 54%, 11%);
+    --colorSecondary: hsl(216, 50%, 16%);
+    --colorTertiary: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    /*62.5% of 16px = 10px*/
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--colorPrimary);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 320px;
+    height: 500px;
+    background-color: var(--colorSecondary);
+    border-radius: 1.5rem;
+}
+
+.card-image--container {
+    width: 320px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 86%;
+    height: 93%;
+    border-radius: 1rem;
+    margin-top: 1.3rem;
+}
