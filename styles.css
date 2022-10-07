@@ -3,14 +3,14 @@
     --colorSecondary: hsl(216, 50%, 16%);
     --colorTertiary: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
-    
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
 }
 
 html {
     /*62.5% of 16px = 10px*/
     font-size: 62.5%;
-    font-family: 'Outfit', sans-serif;
-
+    
 }
 
 body {
@@ -19,12 +19,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Outfit', sans-serif;
+
 }
 
 /* THE CARD IMAGE SECTION */
 .container {
     width: 320px;
-    height: 500px;
+    height: 520px;
     background-color: var(--colorSecondary);
     border-radius: 1.5rem;
 }
@@ -53,15 +55,28 @@ h1{
 p{
     font-size: 1.8rem;
     font-weight: 300;
-    color: var(--colorTertiary);
+    color: var(--softblue);
     margin-top: 1rem;
 }
 
 .description {
-    margin-left: 2rem;
+    margin: 0 2.1rem;
 }
 
 .price {
-    color: hsl(178, 100%, 50%);
+    color: var(--cyan);
     font-weight: 400;
+}
+
+/* SPACING THE TEXT */
+.spaced-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ICONS */
+.fa-minus {
+    background-color: var(--colorTertiary);
+    width: 100%;
+    height: 1px;
 }
